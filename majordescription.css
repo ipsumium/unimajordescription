@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,300italic,400italic);
+#major-banner-image {
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-image {
+        overflow: hidden;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+#major-banner-text {
+    background: #000;
+    width: 90%;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-text {
+        opacity: 80%;
+        width: 260px;
+        right: 0px;
+        padding: 20px 20px 400px 20px;
+        margin-bottom: -380px;
+        position: absolute;
+        top: 0px;
+    }
+}
+
+#major-banner-school {
+    padding-top: 0px;
+    padding-left: 0px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-school {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+}
+
+#major-banner-title {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+#major-banner-title h1 {
+    font-weight: bold;
+    color: #F39C00;
+    font-size: 22px;
+    margin: 5px;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-title h1 {
+        font-size: 36px;
+    }
+}
+
+#major-banner {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+}
+
+img {
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic
+}
+
+p {
+    margin: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.media {
+    overflow: hidden;
+    *overflow: visible;
+    zoom: 1
+}
+
+a img {
+    outline: none;
+    border: none;
+}
+
+.content div {
+    max-width: 800px;
+    margin: auto;
+}
+
+.content h2 {
+    border-bottom: medium none;
+    font-size: 16px;
+    margin-top: 1.4em;
+    text-transform: none;
+    line-height: 1.2em;
+}
+
+h2 {
+    max-width: 800px;
+    margin: auto;
+    background-color: #26304d;
+    border-bottom: medium none;
+    border-top: 2px solid #E0DCD4;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
