@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,300italic,400italic);
+#major-banner {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+}
+
 #major-banner-image {
     position: relative;
     overflow-x: hidden;
@@ -8,7 +14,7 @@
     #major-banner-image {
         overflow: hidden;
         height: 300px;
-        object-fit: contain;
+        /* object-fit: contain; */
     }
 }
 
@@ -46,69 +52,23 @@
     }
 }
 
-#major-banner-title {
-    padding-top: 0px;
-    padding-left: 0px;
-}
-
 #major-banner-title h1 {
     font-weight: bold;
     color: #F39C00;
-    font-size: 22px;
+    font-size: 32px;
     margin: 5px;
 }
 
-@media only screen and (min-width:480px) {
-    #major-banner-title h1 {
-        font-size: 36px;
-    }
-}
 
-#major-banner {
-    position: relative;
-    max-width: 850px;
-    margin: auto;
-}
-
-img {
+/* img {
     width: auto\9;
     height: auto;
     max-width: 100%;
     border: 0;
     -ms-interpolation-mode: bicubic
-}
+} */
 
-p {
-    margin: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.media {
-    overflow: hidden;
-    *overflow: visible;
-    zoom: 1
-}
-
-a img {
-    outline: none;
-    border: none;
-}
-
-.content div {
-    max-width: 800px;
-    margin: auto;
-}
-
-.content h2 {
-    border-bottom: medium none;
-    font-size: 16px;
-    margin-top: 1.4em;
-    text-transform: none;
-    line-height: 1.2em;
-}
-
-h2,
-.majordescription {
+#majordescription h2 {
     max-width: 800px;
     margin: auto;
     background-color: #26304d;
@@ -122,4 +82,14 @@ h2,
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+#majordescription p {
+    margin: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 800px;
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
 }
