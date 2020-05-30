@@ -1,0 +1,154 @@
+:root {
+    --major-max-width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,300italic,400italic);
+#major-banner-image {
+    position: relative;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-image {
+        overflow: hidden;
+        height: 300px;
+        max-width: var(--major-max-width);
+        /* object-fit: contain; */
+    }
+}
+
+
+/* img {
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+    -ms-interpolation-mode: bicubic
+} */
+
+#major-banner-text {
+    background: #000;
+    width: 90%;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-text {
+        opacity: 80%;
+        width: 260px;
+        right: 0px;
+        padding: 20px 20px 400px 20px;
+        margin-bottom: -380px;
+        position: absolute;
+        top: 0px;
+    }
+}
+
+#major-banner-school {
+    padding-top: 0px;
+    padding-left: 0px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width:480px) {
+    #major-banner-school {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+}
+
+#major-banner-title h1 {
+    font-weight: bold;
+    color: #F39C00;
+    font-size: 32px;
+    margin: 5px;
+}
+
+#majordescription h2 {
+    max-width: var(--major-max-width);
+    margin: auto;
+    background-color: #26304d;
+    border-bottom: medium none;
+    border-top: 2px solid #E0DCD4;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#majordescription p {
+    margin: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: var(--major-max-width);
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Accordeon styling */
+
+.accordeon {
+    /* min-width: 300px; */
+    max-width: var(--major-max-width);
+    margin: 10px auto;
+}
+
+.accordeon label {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #e5e5e5;
+    color: #000;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+.accordeon label:hover {
+    background: #26304d;
+    color: #fff;
+}
+
+.accordeon .mjpanel {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+/* Hide checkboxes and radio-buttons */
+
+.accordeon input[type="radio"],
+.accordeon input[type="checkbox"] {
+    display: none;
+}
+
+
+/* Show .panel for corresponding to checked radio or checkbox */
+
+.accordeon input[type="radio"]:checked+.mjpanel,
+.accordeon input[type="checkbox"]:checked+.mjpanel {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    padding: 0.0em;
+}
+
+div.mjpanel ul {
+    margin: 5px;
+}
