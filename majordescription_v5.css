@@ -1,5 +1,5 @@
 :root {
-    --major-max-width: 100%;
+    --major-max-width: 1100px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,300italic,400italic);
@@ -7,6 +7,7 @@
     position: relative;
     overflow-x: hidden;
     margin: auto;
+    margin-top: 0px;
 }
 
 @media only screen and (min-width:480px) {
@@ -18,14 +19,12 @@
     }
 }
 
-
-/* img {
-    width: auto\9;
+div#major-banner-image img {
+    width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: var(--major-max-width);
     border: 0;
-    -ms-interpolation-mode: bicubic
-} */
+}
 
 #major-banner-text {
     background: #000;
@@ -63,7 +62,7 @@
 
 #major-banner-title h1 {
     font-weight: bold;
-    color: #F39C00;
+    color: #fff;
     font-size: 32px;
     margin: 5px;
 }
