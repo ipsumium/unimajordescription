@@ -1,3 +1,7 @@
+:root {
+    --major-max-width: 900px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,300italic,400italic);
 #major-banner-image {
     position: relative;
@@ -9,7 +13,7 @@
     #major-banner-image {
         overflow: hidden;
         height: 300px;
-        max-width: 900px;
+        max-width: var(--major-max-width);
         /* object-fit: contain; */
     }
 }
@@ -65,7 +69,7 @@
 }
 
 #majordescription h2 {
-    max-width: 900px;
+    max-width: var(--major-max-width);
     margin: auto;
     background-color: #26304d;
     border-bottom: medium none;
@@ -83,9 +87,68 @@
 #majordescription p {
     margin: 20px;
     font-family: 'Source Sans Pro', sans-serif;
-    max-width: 900px;
+    max-width: var(--major-max-width);
     margin-top: 10px;
     text-align: justify;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/* Accordeon styling */
+
+.accordeon {
+    /* min-width: 300px; */
+    max-width: var(--major-max-width);
+    margin: 10px auto;
+}
+
+.accordeon label {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: #e5e5e5;
+    color: #000;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+.accordeon label:hover {
+    background: #26304d;
+    color: #fff;
+}
+
+.accordeon .mjpanel {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+/* Hide checkboxes and radio-buttons */
+
+.accordeon input[type="radio"],
+.accordeon input[type="checkbox"] {
+    display: none;
+}
+
+
+/* Show .panel for corresponding to checked radio or checkbox */
+
+.accordeon input[type="radio"]:checked+.mjpanel,
+.accordeon input[type="checkbox"]:checked+.mjpanel {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    padding: 0.0em;
+}
+
+div.mjpanel ul {
+    margin: 5px;
 }
