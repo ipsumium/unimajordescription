@@ -36,7 +36,7 @@ div#major-banner-image img {
 @media only screen and (min-width:480px) {
     #major-banner-text {
         opacity: 80%;
-        width: 260px;
+        width: 300px;
         right: 0px;
         padding: 20px 20px 400px 20px;
         margin-bottom: -380px;
@@ -63,7 +63,7 @@ div#major-banner-image img {
 #major-banner-title h1 {
     font-weight: bold;
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     margin: 5px;
 }
 
